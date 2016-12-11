@@ -5,4 +5,4 @@ res.send({"IP address":req.headers['x-forwarded-for'],"language":req.headers['ac
 res.end();
 });
 var port = process.env.PORT||8080;
-app.listen(8080, function(){console.log('listening on port 8080...');});
+app.listen(port, function(){console.log('listening on port 8080...');});
